@@ -43,7 +43,7 @@ class App extends Component {
               movie.video_src = movie.key;
               console.log(movie.video_src);
 
-              var videoRow = <MovieRow key={movie.id} movie2={movie} />;
+              var videoRow = <MovieRow key={movie.id} movie={movie} />;
               videoRows.push(videoRow);
             });
             console.log("videoRows");
